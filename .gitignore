@@ -1,0 +1,8 @@
+# Dependencies Packages
+node_modules
+
+# Enviroment Variables
+.env
+
+# Personal Annotations dir
+annotations/

@@ -1,8 +1,5 @@
-const express = require('express');
-const app = express();
 
-app.get('/', (req, res) => {
-    res.status(200).send();
-});
+const app = require('./app');
+const dotenv = require('dotenv/config');
 
-app.listen(3001, () => console.log('Server is Running on PORT [3001]'))
+app.listen(process.env.PORT || 3001, () => console.log(`Server is Running on PORT [${process.env.PORT || 3001}]`))
